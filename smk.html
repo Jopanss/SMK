@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMK Atisa Dipamkara</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Header Styles */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 50px;
+            background: rgba(255, 255, 255, 0.9);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .logo {
+            height: 60px;
+        }
+
+        /* Banner Styles */
+        .banner {
+            height: 100vh;
+            position: relative;
+        }
+
+        .banner-slider {
+            width: 100%;
+            height: 100%;
+        }
+
+        .banner-slide {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .banner-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #fff;
+        }
+
+        .school-name {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 4em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        /* Section Styles */
+        .section {
+            padding: 80px 0;
+            position: relative;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 40px;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Event Cards */
+        .event-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .event-card {
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .event-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Achievement Section */
+        .achievement-slider {
+            width: 100%;
+            padding: 40px 0;
+        }
+
+        /* Footer */
+        .footer {
+            background: #333;
+            color: #fff;
+            padding: 60px 0;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+        }
+
+        .swiper-pagination-bullet {
+            width: 12px;
+            height: 12px;
+            background: #fff;
+            opacity: 0.5;
+        }
+
+        .swiper-pagination-bullet-active {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <img src="logo_atisa.png" alt="Logo Atisa" class="logo">
+        <img src="logo_osis.jpg" alt="Logo OSIS" class="logo">
+    </header>
+
+    <!-- Banner Section -->
+    <section class="banner">
+        <div class="swiper banner-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide banner-slide" style="background-image: url('banner1.jpg')">
+                    <div class="banner-content">
+                        <h1 class="school-name">SMK ATISA DIPAMKARA</h1>
+                        <p>Mendidik Generasi Unggul untuk Masa Depan Cemerlang</p>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                
+                <div class="swiper-slide banner-slide" style="background-image: url('banner2.jpg')">
+                    <div class="banner-content">
+                        <h1 class="school-name">OSIS ATISA DIPAMKARA</h1>
+                        <p>SMK BISA, SMK HEBAT</p>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Tentang Kami</h2>
+            <p>Sekolah Hebat Cihuyyyyyy</p>
+        </div>
+    </section>
+
+    <!-- Announcements Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Pengumuman</h2>
+            <div class="event-grid">
+                <!-- Event cards will be here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Prestasi Siswa</h2>
+            <div class="swiper achievement-slider">
+                <div class="swiper-wrapper">
+                    <!-- Achievement slides will be here -->
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>SMK Atisa Dipamkara</h3>
+                    <p>Email: smkatisadipamkara@yahoo.co.id</p>
+                    <p>Telepon: 5919679</p>
+                    <p>Fax: 5918279</p>
+                </div>
+                <div class="footer-yayasan">
+                    <h3>Yayasan Satya Dharma Surya Indonesia</h3>
+                    <!-- Add yayasan information -->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        // Initialize Swiper
+        const bannerSwiper = new Swiper('.banner-slider', {
+            loop: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+
+        const achievementSwiper = new Swiper('.achievement-slider', {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                },
+                768: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 3,
+                },
+            },
+        });
+    </script>
+</body>
+</html>
